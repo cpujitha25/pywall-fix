@@ -1,0 +1,15 @@
+{
+    "default_chain": "ACCEPT",
+    "INPUT": [
+        {"name": "PortRangeRule",
+         "protocol": "TCP",
+         "src_lo": 49151,
+         "src_hi": 65535,
+         "action": "DROP"},
+        {"name": "PortRangeRule",
+         "protocol": "UDP",
+         "src_lo": 49151,
+         "src_hi": 65535,
+         "action": "DROP"}
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "default_chain": "ACCEPT",
+    "INPUT": [
+        {"name": "PrintRule"},
+        {"name": "PortRule",
+         "protocol": "TCP",
+         "src_port": 80,
+         "action": "DROP"},
+        {"name": "PortRule",
+         "protocol": "TCP",
+         "dst_port": 80,
+         "action": "DROP"},
+        {"name": "PortRule",
+         "protocol": "UDP",
+         "src_port": 53,
+         "action": "DROP"},
+        {"name": "PortRule",
+         "protocol": "UDP",
+         "dst_port": 53,
+         "action": "DROP"}
+    ]
+}
